@@ -1,0 +1,21 @@
+package ${package}.${moduleName}.dao;
+import com.sundun.orm.mybatis.BaseMapper;
+import ${package}.${moduleName}.entity.${className}Entity;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+import java.util.Map;
+
+
+/**
+ * ${comments}
+ * 
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Mapper
+public interface ${className}Dao extends BaseMapper<${className}Entity> {
+    List<${className}Entity> selectListMap(@Param("parms") Map<String, Object> parms);
+}
